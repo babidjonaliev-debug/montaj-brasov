@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InstagramIcon } from "@/components/site/social-icons";
+import { WorkGallery } from "@/components/site/works-section";
 import { WhatsAppCta } from "@/components/site/whatsapp-cta";
 import { SERVICES } from "@/data/services";
 import {
@@ -42,6 +43,14 @@ export default function DesprePage() {
         afacerea în {OWNER_NOW_BUILDING_IN}: laminat, vinil, linoleum și plăci OSB, plus
         lucrări mici prin casă.
       </p>
+
+      <section className="mt-12">
+        <h2 className="font-heading text-xl font-bold">Lucrări</h2>
+        <p className="mt-3 text-base leading-relaxed text-foreground/90">
+          Câteva camere terminate. Mai multe sunt pe Instagram.
+        </p>
+        <WorkGallery className="mt-6 sm:grid-cols-2 lg:grid-cols-2" />
+      </section>
 
       <section className="mt-12">
         <h2 className="font-heading text-xl font-bold">De unde vine și unde lucrează</h2>
@@ -133,9 +142,9 @@ export default function DesprePage() {
         <h2 className="font-heading text-xl font-bold">Lucrările, pe Instagram</h2>
         <div className="mt-3 space-y-4 text-base leading-relaxed text-foreground/90">
           <p>
-            Lucrările și șantierele echipei sunt pe Instagram, nu într-un catalog de pe
-            site. Pozele sunt de pe șantiere, ca să vezi o cameră terminată înainte să
-            scrii — materialul pus, îmbinările, cum arată pragul.
+            Lucrările echipei sunt pe Instagram, la masterr_fix. Pozele sunt de pe
+            șantiere, ca să vezi o cameră terminată înainte să scrii — materialul pus,
+            îmbinările, cum arată pragul.
           </p>
           <p>
             <Link

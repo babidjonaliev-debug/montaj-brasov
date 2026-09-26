@@ -2,11 +2,25 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ZONES } from "@/lib/config";
 
-export function ZonesSection() {
+export function ZonesSection({ quiet = false }: { quiet?: boolean }) {
   return (
-    <section className="border-t border-border bg-secondary">
-      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-        <h2 className="font-heading text-2xl font-bold sm:text-3xl">Unde ajung</h2>
+    <section className={quiet ? undefined : "border-t border-border bg-secondary"}>
+      <div
+        className={
+          quiet
+            ? "mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14"
+            : "mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28"
+        }
+      >
+        <h2
+          className={
+            quiet
+              ? "font-heading text-lg font-semibold text-foreground/80"
+              : "font-heading text-2xl font-bold sm:text-3xl"
+          }
+        >
+          Unde ajung
+        </h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
           În Brașov și în localitățile din jur vin la măsurătoare în aceeași zi. Scrii
           seara, noaptea sau în weekend. Lista de mai jos e zona în care mă deplasez — nu

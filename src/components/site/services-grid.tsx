@@ -10,17 +10,17 @@ export function ServicesGrid() {
   const smallJobs = SERVICES[4];
 
   return (
-    <section id="servicii" className="border-t border-border bg-secondary">
-      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+    <section id="servicii">
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         <h2 className="font-heading text-2xl font-bold sm:text-3xl">Ce fac</h2>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {mainServices.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}
         </div>
 
         {smallJobs ? (
-          <div className="mt-4">
+          <div className="mt-6">
             <ServiceCard service={smallJobs} secondary />
           </div>
         ) : null}
@@ -42,7 +42,7 @@ function ServiceCard({
     <Link
       href={`/${service.slug}`}
       className={cn(
-        "group flex flex-col justify-between rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40",
+        "group flex flex-col justify-between rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/30 sm:p-7",
         secondary && "sm:flex-row sm:items-center sm:gap-8",
       )}
     >

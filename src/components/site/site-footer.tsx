@@ -72,7 +72,7 @@ export function SiteFooter() {
                   className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground"
                 >
                   <InstagramIcon className="size-4" />
-                  Instagram
+                  Instagram — masterr_fix
                 </Link>
               ) : null}
               <span className="text-muted-foreground">Brașov și localitățile din jur</span>

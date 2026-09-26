@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import {
   OWNER_NAME,
   OWNER_NOW_BUILDING_IN,
@@ -7,31 +6,21 @@ import {
   OWNER_YEARS_EXPERIENCE,
 } from "@/lib/config";
 
-/**
- * Pe homepage, doar cine e și unde a lucrat. Povestea lungă stă pe /despre.
- * Instagram și cei 8 ani sunt deja în banda de sub hero — nu le repetăm aici.
- */
+/** O singură propoziție către /despre. Povestea lungă stă pe pagina aia. */
 export function MasterSection() {
   return (
-    <section className="border-t border-border bg-secondary">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-14">
-        <div className="max-w-xl">
-          <h2 className="font-heading text-2xl font-bold">
-            {OWNER_NAME}, {OWNER_YEARS_EXPERIENCE} ani în montaj
-          </h2>
-          <p className="mt-2 text-base text-muted-foreground">
-            A lucrat în {OWNER_WORKED_IN}. Acum își construiește afacerea în{" "}
-            {OWNER_NOW_BUILDING_IN}.
-          </p>
-        </div>
+    <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+      <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
         <Link
           href="/despre"
-          className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+          className="font-medium text-foreground underline-offset-4 hover:underline"
         >
-          Despre
-          <ArrowRight className="size-4" />
+          Despre {OWNER_NAME}
         </Link>
-      </div>
+        {" — "}
+        {OWNER_YEARS_EXPERIENCE} ani de montaj. A lucrat în {OWNER_WORKED_IN}, acum își
+        construiește afacerea în {OWNER_NOW_BUILDING_IN}.
+      </p>
     </section>
   );
 }
