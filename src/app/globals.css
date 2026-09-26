@@ -41,6 +41,7 @@
   --color-card: var(--card);
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
+  --color-brass: var(--brass);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -51,30 +52,35 @@
 }
 
 :root {
-  --background: #f7f5f1;
-  --foreground: #17130f;
-  --card: #ffffff;
-  --card-foreground: #17130f;
-  --popover: #ffffff;
-  --popover-foreground: #17130f;
-  --primary: #c1502e;
-  --primary-foreground: #fff9f5;
-  --secondary: #ece6dc;
-  --secondary-foreground: #17130f;
-  --muted: #eee8de;
-  --muted-foreground: #5f5a52;
-  --accent: #f2ded3;
-  --accent-foreground: #7c3418;
+  /**
+   * Paletă: grafit / fildeș / piatră caldă / alamă, în locul terracotta-ului
+   * de pe crem. Alamă e rezervată pentru linii fine, etichete mici și focus —
+   * nu pentru butoane mari.
+   */
+  --background: #f4f0e8; /* fildeș */
+  --foreground: #1c1916; /* text cerneală */
+  --card: #fbf9f3;
+  --card-foreground: #1c1916;
+  --popover: #fbf9f3;
+  --popover-foreground: #1c1916;
+  --primary: #161412; /* grafit */
+  --primary-foreground: #f4f0e8;
+  --secondary: #e7e1d6; /* piatră caldă — benzi alternative */
+  --secondary-foreground: #1c1916;
+  --muted: #eee9dd;
+  --muted-foreground: #6b6459;
+  --accent: #ece3d0;
+  --accent-foreground: #6b5636;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: rgba(23, 19, 15, 0.1);
-  --input: rgba(23, 19, 15, 0.14);
-  --ring: #c1502e;
+  --border: rgba(28, 25, 22, 0.09);
+  --input: rgba(28, 25, 22, 0.14);
+  --ring: #8c7348; /* alamă — doar pentru focus */
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.75rem;
+  --radius: 0.5rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -83,9 +89,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  /** Culori „tari”, folosite direct pentru blocuri de contrast (nu prin tokenii shadcn). */
-  --ink: #17130f;
-  --ink-foreground: #f7f5f1;
+  /** Culori „tari", folosite direct pentru blocuri de contrast (nu prin tokenii shadcn). */
+  --ink: #161412; /* grafit */
+  --ink-foreground: #f4f0e8; /* fildeș */
+  /** Alamă — linii fine, etichete mici, focus. Niciodată fundal de buton mare. */
+  --brass: #8c7348;
 }
 
 @layer base {
@@ -105,6 +113,7 @@
   h4 {
     font-family: var(--font-heading);
     letter-spacing: -0.01em;
+    font-weight: 600;
   }
   .tabular {
     font-variant-numeric: tabular-nums;

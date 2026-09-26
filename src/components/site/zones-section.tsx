@@ -4,7 +4,7 @@ import { SAME_DAY_CUTOFF_HOUR, ZONES } from "@/lib/config";
 
 export function ZonesSection() {
   return (
-    <section className="border-t border-border bg-secondary/30">
+    <section className="border-t border-brass/20 bg-secondary">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="font-heading text-2xl font-semibold sm:text-3xl">Unde ajung</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">

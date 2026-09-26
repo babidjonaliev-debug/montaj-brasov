@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
@@ -14,10 +14,11 @@ const bodyFont = Inter({
   display: "swap",
 });
 
-const headingFont = Sora({
+const headingFont = Fraunces({
   variable: "--font-heading",
   subsets: ["latin", "latin-ext"],
   weight: ["500", "600", "700"],
+  style: ["normal"],
   display: "swap",
 });
 

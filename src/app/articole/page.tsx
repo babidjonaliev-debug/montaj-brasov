@@ -28,7 +28,7 @@ export default function ArticolePage() {
           <Link
             key={article.slug}
             href={`/articole/${article.slug}`}
-            className="group flex items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5 hover:shadow-md"
+            className="group flex items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5 hover:shadow-sm"
           >
             <div>
               <h2 className="text-lg font-semibold">{article.title}</h2>

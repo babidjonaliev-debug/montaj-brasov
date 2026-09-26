@@ -9,7 +9,7 @@ export function ServicesGrid() {
   const smallJobs = SERVICES[4];
 
   return (
-    <section id="servicii" className="border-t border-border bg-secondary/30">
+    <section id="servicii" className="border-t border-brass/20 bg-secondary">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="font-heading text-2xl font-semibold sm:text-3xl">Ce fac</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -52,7 +52,7 @@ function ServiceCard({
     <Link
       href={`/${slug}`}
       className={cn(
-        "group flex flex-col justify-between rounded-2xl border border-border bg-card p-5 transition-shadow hover:shadow-md",
+        "group flex flex-col justify-between rounded-2xl border border-border bg-card p-5 transition-shadow hover:shadow-sm",
         secondary && "sm:flex-row sm:items-center sm:gap-6 bg-card/60",
       )}
     >
