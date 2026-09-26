@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import { Menu, Phone } from "lucide-react";
 import { BUSINESS_NAME, OWNER_NAME, PHONE_DISPLAY } from "@/lib/config";
 import { SERVICES } from "@/data/services";
@@ -15,6 +19,21 @@ const NAV_LINKS = [
 ];
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  const mobileMenuRef = useRef<HTMLDetailsElement>(null);
+
+  useEffect(() => {
+    if (mobileMenuRef.current) {
+      mobileMenuRef.current.open = false;
+    }
+  }, [pathname]);
+
+  function closeMobileMenu() {
+    if (mobileMenuRef.current) {
+      mobileMenuRef.current.open = false;
+    }
+  }
+
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
@@ -71,12 +90,20 @@ export function SiteHeader() {
           <WhatsAppCta size="default" label="WhatsApp" className="px-4 py-2 text-sm" />
         </div>
 
-        <details className="group lg:hidden">
+        <details ref={mobileMenuRef} className="group lg:hidden">
           <summary className="flex size-10 cursor-pointer list-none items-center justify-center rounded-full border border-border text-foreground">
             <Menu className="size-5" />
           </summary>
           <div className="absolute inset-x-0 top-full z-50 border-b border-border bg-background p-4 shadow-md">
-            <nav className="flex flex-col gap-1 text-base">
+            <nav
+              className="flex flex-col gap-1 text-base"
+              onClick={(event) => {
+                const target = event.target;
+                if (target instanceof Element && target.closest("a")) {
+                  closeMobileMenu();
+                }
+              }}
+            >
               {SERVICES.map((service) => (
                 <Link
                   key={service.slug}
