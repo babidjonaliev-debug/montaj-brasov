@@ -12,7 +12,11 @@ const SPECS = [
 export function Hero() {
   return (
     <section className="mx-auto max-w-6xl px-4 pt-16 pb-16 sm:px-6 sm:pt-24 sm:pb-20">
-      <div className="max-w-2xl">
+      <div className="relative max-w-2xl">
+        <div
+          aria-hidden="true"
+          className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-background/85 blur-2xl sm:-inset-10"
+        />
         <p className="kicker">
           <span className="h-px w-6 bg-primary" aria-hidden="true" />
           Brașov și localitățile din jur

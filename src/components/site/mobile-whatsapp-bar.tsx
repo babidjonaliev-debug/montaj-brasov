@@ -6,7 +6,7 @@ import { OWNER_NAME } from "@/lib/config";
 
 export function MobileWhatsAppBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 flex items-stretch gap-2 border-t border-border bg-background/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 flex items-stretch gap-2 border-t border-border bg-background p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:hidden">
       <Link
         href={buildWhatsAppLink()}
         target="_blank"

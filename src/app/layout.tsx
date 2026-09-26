@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
 import { MobileWhatsAppBar } from "@/components/site/mobile-whatsapp-bar";
+import { PageBackground } from "@/components/site/page-background";
 import { JsonLd } from "@/components/site/json-ld";
 import { localBusinessJsonLd } from "@/lib/seo";
 import { BUSINESS_NAME, BUSINESS_TAGLINE, SITE_URL } from "@/lib/config";
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <JsonLd data={localBusinessJsonLd()} />
+        <PageBackground />
         <SiteHeader />
         <main className="flex-1 pb-24 md:pb-0">{children}</main>
         <SiteFooter />

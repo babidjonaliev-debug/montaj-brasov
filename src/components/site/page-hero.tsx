@@ -18,7 +18,11 @@ export function PageHero({
 }) {
   return (
     <section className="mx-auto max-w-6xl px-4 pt-14 pb-10 sm:px-6 sm:pt-20">
-      <div className="max-w-2xl">
+      <div className="relative max-w-2xl">
+        <div
+          aria-hidden="true"
+          className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-background/85 blur-2xl sm:-inset-10"
+        />
         <div className="flex items-center gap-4">
           {Icon ? (
             <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-primary/25 bg-secondary text-primary">
