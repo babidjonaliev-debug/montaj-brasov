@@ -18,7 +18,7 @@ import { BUSINESS_NAME } from "@/lib/config";
 export const metadata: Metadata = pageMetadata({
   title: `${BUSINESS_NAME} — montaj laminat, vinil, linoleum, OSB`,
   description:
-    "Montaj laminat, vinil, linoleum și plăci OSB în Brașov. Măsurătoare gratuită în aceeași zi. Scrii pe WhatsApp, seara, noaptea sau în weekend.",
+    "Montaj laminat, vinil, linoleum și plăci OSB în Brașov și în localitățile din jur. Măsurătoare gratuită în aceeași zi. Scrii pe WhatsApp, seara, noaptea sau în weekend.",
   path: "/",
 });
 

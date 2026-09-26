@@ -16,6 +16,7 @@ const FOOTER_LINKS = [
   { href: "/preturi", label: "Prețuri" },
   { href: "/zone-deservite", label: "Zone deservite" },
   { href: "/articole", label: "Articole" },
+  { href: "/despre", label: "Despre" },
   { href: "/contact", label: "Contact" },
   { href: "/politica-de-confidentialitate", label: "Politica de confidențialitate" },
 ];

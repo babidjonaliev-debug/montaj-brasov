@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { WhatsAppCta } from "@/components/site/whatsapp-cta";
-import { BUSINESS_NAME, SAME_DAY_CUTOFF_HOUR } from "@/lib/config";
+import { BUSINESS_NAME } from "@/lib/config";
 import { pageMetadata, serviceJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/site/json-ld";
 
@@ -14,15 +14,15 @@ export const metadata: Metadata = pageMetadata({
 const ZONE_DETAILS = [
   {
     name: "Brașov",
-    note: "Toate cartierele — Centru, Schei, Tractorul, Astra, Bartolomeu, Noua, Stupini, Dârste, Coresi, Avantgarden. Măsurătoare de obicei în aceeași zi.",
+    note: "Toate cartierele — Centru, Schei, Tractorul, Astra, Bartolomeu, Noua, Stupini, Dârste, Coresi, Avantgarden. Măsurătoare în aceeași zi.",
   },
   {
     name: "Săcele",
-    note: "La aproximativ 10-15 km de centrul Brașovului. Scrii până la 16:00, vin tot în ziua aia.",
+    note: "La aproximativ 10-15 km de centrul Brașovului. Măsurătoare în aceeași zi, ca în oraș.",
   },
   {
     name: "Ghimbav",
-    note: "Case și apartamente de-a lungul DN1/DN73. Aceeași regulă de oră ca la Săcele.",
+    note: "Case și apartamente de-a lungul DN1/DN73. Măsurătoare în aceeași zi.",
   },
   { name: "Sânpetru", note: "Aproape de Brașov, spre nord — zonă cu multe case noi." },
   { name: "Hărman", note: "Aproximativ 10 km de Brașov, în același interval de deplasare." },
@@ -55,10 +55,9 @@ export default function ZoneDeservitePage() {
           Zone deservite
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          În Brașov vin de obicei chiar în ziua în care scrii. În localitățile din jur, la
-          fel — dacă scrii până la ora {SAME_DAY_CUTOFF_HOUR}:00. Mai târziu, vin
-          dimineața următoare, nu pentru că nu vreau, ci pentru că drumul dus-întors nu se
-          face în grabă, pe întuneric.
+          În Brașov și în localitățile de mai jos vin la măsurătoare în aceeași zi. Scrii
+          pe WhatsApp seara, noaptea sau în weekend. Nu e tot județul — lista asta e zona
+          în care mă deplasez.
         </p>
       </div>
 

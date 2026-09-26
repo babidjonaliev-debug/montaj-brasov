@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { InstagramIcon } from "@/components/site/social-icons";
 import {
   INSTAGRAM_URL,
@@ -53,6 +54,13 @@ export function MasterSection() {
                 .
               </p>
             ) : null}
+            <Link
+              href="/despre"
+              className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+            >
+              Despre
+              <ArrowRight className="size-4" />
+            </Link>
           </div>
 
           <div className="rounded-xl border border-border bg-card p-6 sm:p-7">

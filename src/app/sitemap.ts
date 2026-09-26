@@ -10,6 +10,7 @@ const STATIC_PATHS = [
   "contact",
   "politica-de-confidentialitate",
   "articole",
+  "despre",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

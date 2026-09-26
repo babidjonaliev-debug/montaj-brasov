@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/preturi", label: "Prețuri" },
   { href: "/zone-deservite", label: "Zone deservite" },
   { href: "/articole", label: "Articole" },
+  { href: "/despre", label: "Despre" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -24,7 +25,7 @@ export function SiteHeader() {
           {BUSINESS_NAME}
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <nav className="hidden items-center gap-6 text-sm font-medium lg:flex">
           <details className="group relative">
             <summary className="cursor-pointer list-none text-foreground/80 hover:text-foreground">
               Servicii
@@ -52,7 +53,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           {PHONE_DISPLAY ? (
             <Link
               href={buildTelLink()}
@@ -67,7 +68,7 @@ export function SiteHeader() {
           <WhatsAppCta size="default" label="WhatsApp" className="px-4 py-2 text-sm" />
         </div>
 
-        <details className="group md:hidden">
+        <details className="group lg:hidden">
           <summary className="flex size-10 cursor-pointer list-none items-center justify-center rounded-full border border-border text-foreground">
             <Menu className="size-5" />
           </summary>

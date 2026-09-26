@@ -27,7 +27,7 @@ export const HOME_FAQ: FaqItem[] = [
   {
     question: "Vii chiar în aceeași zi la măsurătoare?",
     answer:
-      "În Brașov, da, de obicei. Scriu pe WhatsApp seara sau noaptea, vin la măsurătoare a doua zi sau chiar în aceeași seară, dacă am o oră liberă. Pentru Săcele, Ghimbav, Sânpetru și restul — dacă scrii până la 16:00, vin tot în ziua aia, mai târziu vin dimineața următoare.",
+      "Da. În Brașov și în localitățile din jur — Săcele, Ghimbav, Sânpetru, Hărman, Cristian, Codlea, Râșnov, Predeal, Zărnești — vin la măsurătoare în aceeași zi. Scrii pe WhatsApp seara, noaptea sau în weekend. Nu promit tot județul: dacă ești mai departe de lista asta, scrii și stabilim dacă drumul are sens.",
   },
   {
     question: "Faci și lucrări mici, nu doar pardoseală?",

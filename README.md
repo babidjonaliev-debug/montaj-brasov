@@ -10,7 +10,7 @@ Stack: **Next.js 16 (App Router) + TypeScript + Tailwind CSS v4 + shadcn/ui**.
 ## De ce există site-ul
 
 Proprietarul răspunde seara, noaptea și în weekend, pe WhatsApp, și vine la
-măsurătoare în aceeași zi în Brașov. Site-ul e construit în jurul acestui
+măsurătoare în aceeași zi în Brașov și în localitățile din jur. Site-ul e construit în jurul acestui
 hook, nu în jurul unei liste de servicii. Detaliile de strategie (preturi,
 Google Business, anunțuri OLX, ordinea de lansare) sunt în planul din
 depozitul agentului, la
@@ -35,7 +35,7 @@ Prețurile "de la" (orientative, piața Brașov 2026) sunt tot în acel fișier,
 - `/montaj-laminat-brasov`, `/montaj-vinil-brasov`, `/montaj-linoleum-brasov`,
   `/montaj-osb-brasov`, `/lucrari-mici-brasov` — câte o pagină per serviciu,
   cu conținut unic (nu texte spinate).
-- `/preturi`, `/zone-deservite`, `/contact`,
+- `/preturi`, `/zone-deservite`, `/despre`, `/contact`,
   `/politica-de-confidentialitate`.
 - `/articole` + `/articole/[slug]` — ghiduri SEO, câte un articol per
   întrebare reală de căutare (preț, laminat vs. vinil, încălzire în

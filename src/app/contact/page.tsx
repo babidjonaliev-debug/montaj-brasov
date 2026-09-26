@@ -8,7 +8,6 @@ import {
   HOURS_NOTE,
   OWNER_NAME,
   PHONE_DISPLAY,
-  SAME_DAY_CUTOFF_HOUR,
 } from "@/lib/config";
 import { buildTelLink, buildWhatsAppLink } from "@/lib/whatsapp";
 import { pageMetadata } from "@/lib/seo";
@@ -16,7 +15,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: `Contact | ${BUSINESS_NAME}`,
   description:
-    "Scrie pe WhatsApp sau sună. Program seara, noaptea și în weekend. Măsurătoare gratuită, în aceeași zi în Brașov.",
+    "Scrie pe WhatsApp sau sună. Program seara, noaptea și în weekend. Măsurătoare gratuită, în aceeași zi, în Brașov și în localitățile din jur.",
   path: "/contact",
 });
 
@@ -81,10 +80,10 @@ export default function ContactPage() {
           Când e realistă măsurătoarea în aceeași zi
         </h2>
         <p className="mt-3 text-muted-foreground">
-          În Brașov, aproape întotdeauna. În localitățile din jur, dacă scrii până la ora{" "}
-          {SAME_DAY_CUTOFF_HOUR}:00 — mai târziu, vin dimineața următoare. Nu promit
-          „chiar acum” pentru orice oră din zi; promit un răspuns și o oră concretă, cât
-          mai devreme posibil.
+          În Brașov și în localitățile din jur — Săcele, Ghimbav, Sânpetru, Hărman,
+          Cristian, Codlea, Râșnov, Predeal, Zărnești — vin la măsurătoare în aceeași zi.
+          Scrii seara, noaptea sau în weekend. Nu promit tot județul: dacă ești mai
+          departe, scrii și stabilim dacă drumul are sens.
         </p>
       </div>
 

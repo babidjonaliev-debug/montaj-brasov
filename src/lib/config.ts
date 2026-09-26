@@ -55,7 +55,11 @@ export const INSTAGRAM_URL = "https://www.instagram.com/masterr_fix";
 
 // --- Zonă de lucru ----------------------------------------------------------
 
-/** Brașov + localitățile din jur unde se deplasează. */
+/**
+ * Brașov + localitățile din jur unde se deplasează.
+ * Măsurătoarea în aceeași zi acoperă orașul și localitățile de aici,
+ * nu tot județul.
+ */
 export const ZONES = [
   "Brașov",
   "Săcele",
@@ -68,9 +72,6 @@ export const ZONES = [
   "Predeal",
   "Zărnești",
 ] as const;
-
-/** Ora limită după care o cerere din afara Brașovului trece pe a doua zi dimineață. */
-export const SAME_DAY_CUTOFF_HOUR = 16;
 
 // --- Program ----------------------------------------------------------------
 

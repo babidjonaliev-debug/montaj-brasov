@@ -204,19 +204,19 @@ export const ARTICLES: ArticleDef[] = [
     datePublished: PUBLISHED,
     dateModified: PUBLISHED,
     intro: [
-      "„Aceeași zi” nu e un slogan — e o regulă simplă, legată de când scrii pe WhatsApp și de unde ești.",
+      "„Aceeași zi” înseamnă că, dacă ești în Brașov sau într-o localitate din jur, vin la măsurătoare în ziua în care scrii. Nu e tot județul.",
     ],
     sections: [
       {
-        heading: "În Brașov",
+        heading: "În Brașov și în localitățile din jur",
         paragraphs: [
-          "Scrii pe WhatsApp, de obicei seara sau noaptea, când sunt liber. De regulă vin la măsurătoare a doua zi, sau chiar în aceeași seară dacă am o oră liberă. Măsurătoarea e gratuită și nu te obligă la nimic — vin, măsor, îți spun ce cred despre suport, și îți trimit suma pe WhatsApp.",
+          "Scrii pe WhatsApp seara, noaptea sau în weekend. În Brașov, Săcele, Ghimbav, Sânpetru, Hărman, Cristian, Codlea, Râșnov, Predeal și Zărnești vin la măsurătoare în aceeași zi. Măsurătoarea e gratuită și nu te obligă la nimic — vin, măsor, îți spun ce cred despre suport, și îți trimit suma pe WhatsApp.",
         ],
       },
       {
-        heading: "În Săcele, Ghimbav, Sânpetru, Hărman, Cristian, Codlea, Râșnov, Predeal, Zărnești",
+        heading: "Mai departe de lista asta",
         paragraphs: [
-          "Dacă scrii până la ora 16:00, vin tot în ziua aia. Dacă scrii mai târziu, vin dimineața următoare — nu pentru că nu vreau, ci pentru că drumul dus-întors nu se face în grabă, seara, pe întuneric, fără rost.",
+          "Nu promit tot județul Brașov. Dacă ești într-o localitate care nu e pe listă, scrii oricum: dacă drumul are sens, stabilim ora. Dacă nu, îți spun direct.",
         ],
       },
       {

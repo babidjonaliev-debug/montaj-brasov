@@ -25,8 +25,8 @@ export function Hero() {
           Montaj de pardoseli în Brașov
         </h1>
         <p className="mt-6 text-lg text-muted-foreground sm:text-xl">
-          Scrii pe WhatsApp seara, noaptea sau în weekend. Dacă ești în Brașov, vin la
-          măsurătoare chiar în ziua aia — gratuit, fără obligații.
+          Scrii pe WhatsApp seara, noaptea sau în weekend. În Brașov și în localitățile
+          din jur vin la măsurătoare chiar în ziua aia — gratuit, fără obligații.
         </p>
         <p className="mt-2 text-base text-muted-foreground">
           Laminat, vinil, linoleum, plăci OSB și mici reparații prin casă.

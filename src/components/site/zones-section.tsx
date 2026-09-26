@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { SAME_DAY_CUTOFF_HOUR, ZONES } from "@/lib/config";
+import { ZONES } from "@/lib/config";
 
 export function ZonesSection() {
   return (
@@ -8,9 +8,9 @@ export function ZonesSection() {
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
         <h2 className="font-heading text-2xl font-bold sm:text-3xl">Unde ajung</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          În Brașov vin de obicei în aceeași zi. În localitățile din jur, la fel — dacă
-          scrii până la ora {SAME_DAY_CUTOFF_HOUR}:00. Mai târziu, vin dimineața
-          următoare.
+          În Brașov și în localitățile din jur vin la măsurătoare în aceeași zi. Scrii
+          seara, noaptea sau în weekend. Lista de mai jos e zona în care mă deplasez — nu
+          tot județul.
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
           {ZONES.map((zone) => (
