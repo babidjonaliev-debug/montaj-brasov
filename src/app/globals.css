@@ -54,9 +54,9 @@
 
 :root {
   /**
-   * Paletă tehnică, de brand de scule: câmp alb, cerneală aproape-negru,
-   * teal dens pentru butoane, linkuri, contururi de iconițe și o singură
-   * bandă solidă. Fără fildeș, alamă, terracotta sau gradient auriu.
+   * Paletă tehnică: câmp alb, cerneală aproape-negru, un teal potolit
+   * pentru butoane, linkuri, contururi de iconițe și o singură bandă
+   * solidă. Fără fildeș, alamă, terracotta sau gradient auriu.
    */
   --background: #f7f8f7; /* câmp alb */
   --foreground: #121417; /* cerneală aproape-negru */
@@ -64,18 +64,18 @@
   --card-foreground: #121417;
   --popover: #ffffff;
   --popover-foreground: #121417;
-  --primary: #008c9e; /* teal */
+  --primary: #3a727c; /* teal mai potolit, lizibil pe alb */
   --primary-foreground: #f7f8f7;
   --secondary: #eceeed; /* bandă neutră, secțiuni alternative */
   --secondary-foreground: #121417;
   --muted: #edeeed;
   --muted-foreground: #5b6167;
-  --accent: #e3f2f4; /* teal foarte deschis, pentru hover subtil */
-  --accent-foreground: #006e7c;
+  --accent: #e7f0f1; /* teal foarte deschis, pentru hover subtil */
+  --accent-foreground: #2c5c66;
   --destructive: oklch(0.577 0.245 27.325);
   --border: rgba(18, 20, 23, 0.1);
   --input: rgba(18, 20, 23, 0.16);
-  --ring: #008c9e; /* teal — focus */
+  --ring: #3a727c; /* teal — focus */
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -93,9 +93,9 @@
   /** Culori „tari", folosite direct pentru blocuri de contrast (nu prin tokenii shadcn). */
   --ink: #121417;
   --ink-foreground: #f7f8f7;
-  /** Teal dens și teal profund (hover) — butoane, linkuri, contururi de iconițe. */
-  --teal: #008c9e;
-  --teal-deep: #006e7c;
+  /** Teal potolit și varianta lui mai închisă (hover) — butoane, linkuri, contururi. */
+  --teal: #3a727c;
+  --teal-deep: #2c5c66;
 }
 
 @layer base {

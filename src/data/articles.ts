@@ -776,6 +776,314 @@ export const ARTICLES: ArticleDef[] = [
       { href: "/preturi", label: "Toate prețurile" },
     ],
   },
+  {
+    slug: "montaj-parchet-laminat-pas-cu-pas",
+    title: "Montaj parchet laminat, pas cu pas",
+    metaTitle: "Montaj parchet laminat, pas cu pas | Montaj Pardoseli Brașov",
+    metaDescription:
+      "Ordinea unui montaj de laminat: suport, aclimatizare, folie, primul rând cu rost, click și plintă. Ce verific înainte să tai prima planșă.",
+    datePublished: PUBLISHED,
+    dateModified: PUBLISHED,
+    intro: [
+      "Un montaj de laminat nu începe cu prima planșă. Începe cu camera: dacă suportul e drept și uscat, restul e o ordine clară. Dacă nu e, tai degeaba și refaci peste o săptămână.",
+      "Mai jos e ordinea pe care o urmez la o cameră obișnuită, pe șapă deja bună. Manopera pornește de la 35 lei/mp. Suma exactă o dau după măsurătoare.",
+    ],
+    sections: [
+      {
+        heading: "Înainte de prima planșă",
+        paragraphs: [
+          "Verific planeitatea — denivelări peste 2–3 mm pe 2 metri se simt sub picior și se aud. Verific și umiditatea șapei. Pachetele stau în cameră, nedeschise, cam 48 de ore, ca lemnul presat să ajungă la temperatura și umiditatea de acolo.",
+          "Tocul ușii se taie pe înălțimea laminatului plus folia, ca planșa să intre sub toc, nu să se oprească în el. Asta se face înainte de montaj, nu după.",
+        ],
+      },
+      {
+        heading: "Folia, primul rând și click-ul",
+        paragraphs: [
+          "Folia sau spuma se pune pe toată suprafața, cu benzile alăturate, fără să se calce una peste alta în strat gros. Primul rând stă cu rost la perete — de obicei 8–10 mm — ținut cu pene, nu „lipit de zid ca să iasă drept”.",
+          "Rândurile următoare intră în click, pe lungime, apoi la capăt. Îmbinările de la capete se decalează, de regulă cu cel puțin 30 cm, ca să nu se alinieze ca un grătar. Ultimul rând se taie pe lățime și păstrează același rost la peretele opus.",
+        ],
+      },
+      {
+        heading: "Ce închide lucrarea",
+        paragraphs: [
+          "Scot penele abia la final. Plinta acoperă rostul, nu îl umple. Pragurile dintre camere și trecerile către o pardoseală deja montată se pun la urmă, fiecare pe dimensiunea lui. Curăț tăieturile înainte să predau camera.",
+        ],
+      },
+    ],
+    qa: [
+      {
+        question: "Pot sări peste aclimatizare dacă pachetele au stat în mașină?",
+        answer:
+          "Nu. Mașina nu e camera în care stă pardoseala. Pachetele au nevoie de timp în încăperea unde se montează, nedeschise.",
+      },
+      {
+        question: "Cât durează o cameră, dacă suportul e bun?",
+        answer:
+          "O cameră de apartament, fără demontare și fără nivelare, se termină de obicei în aceeași zi. Dacă șapa cere pregătire, ziua de montaj începe abia după ce suportul e gata.",
+      },
+    ],
+    related: [
+      { href: "/montaj-laminat-brasov", label: "Montaj laminat în Brașov" },
+      { href: "/preturi", label: "Toate prețurile" },
+    ],
+  },
+  {
+    slug: "cat-costa-montajul-de-vinil",
+    title: "Cât costă montajul de vinil",
+    metaTitle: "Cât costă montajul de vinil | Montaj Pardoseli Brașov",
+    metaDescription:
+      "Prețul manoperei la vinil click și lipit, de la 35 lei/mp, și de ce o baie mică ajunge la minimul de 800 lei pe vizită.",
+    datePublished: PUBLISHED,
+    dateModified: PUBLISHED,
+    intro: [
+      "Manopera la vinil, LVT sau SPC, pornește de la 35 lei/mp, la fel ca la laminat, când placa e click și suportul e deja drept. Varianta lipită și o șapă care cere nivelare mută suma — o spun înainte, nu după ce am desfăcut pachetele.",
+      "Pentru o baie de 4 mp, 4 × 35 = 140 lei, mult sub minimul de 800 lei pe vizită de lucru. Măsurătoarea rămâne gratuită. La o suprafață mică plătești vizita, nu metrii înmulțiți.",
+    ],
+    sections: [
+      {
+        heading: "Click sau lipit, nu e același lucru",
+        paragraphs: [
+          "SPC-ul și multe LVT-uri se închid în click, ca laminatul, dar placa e mai subțire și cere un suport mai fin: o denivelare care la laminat încă trece se citește pe vinil. Varianta lipită pe toată suprafața ia mai mult timp și adezivul se plătește separat.",
+          "În baie și în bucătărie aleg de obicei SPC, nu laminat. Laminatul are miez de lemn presat și se umflă dacă apa stă la îmbinare. Vinilul nu rezolvă o șapă strâmbă — doar nu se umflă de la o apă vărsată.",
+        ],
+      },
+      {
+        heading: "Ce intră în prețul de bază și ce nu",
+        paragraphs: [
+          "În bază intră montajul, tăieturile la ușă și la praguri și rostul unde producătorul îl cere. Nu intră demontarea pardoselii vechi, nivelarea, plinta și profilele de trecere. La lipit, adezivul e rând separat.",
+          "Pierderea la tăiere e de obicei 5–8% la un desen simplu, mai mult dacă placa are un model care trebuie continuat. O pun în calcul la măsurătoare, ca să nu lipsească un pachet la final.",
+        ],
+      },
+      {
+        heading: "Un exemplu, ca să vezi ordinul de mărime",
+        paragraphs: [
+          "Un hol și o bucătărie, împreună 18 mp, click, suport bun: 18 × 35 = 630 lei, deci se aplică minimul de 800 lei dacă nu mai e și altă cameră în aceeași vizită. Aceeași suprafață, cu nivelare și plintă, e altă sumă — o scriu pe WhatsApp după ce văd podeaua, nu o estimez din mesaj.",
+        ],
+      },
+    ],
+    qa: [
+      {
+        question: "De ce vinilul nu e mai ieftin la montaj decât laminatul?",
+        answer:
+          "Placa e mai subțire și suportul trebuie mai drept. Timpul de lucru nu scade doar pentru că materialul e mai ușor.",
+      },
+      {
+        question: "Prețul de 35 lei/mp include și materialul?",
+        answer:
+          "Nu. E manoperă. Materialul îl aduci tu, sau îți spun ce să cauți, în funcție de cameră.",
+      },
+    ],
+    related: [
+      { href: "/montaj-vinil-brasov", label: "Montaj vinil / LVT / SPC" },
+      { href: "/preturi", label: "Toate prețurile" },
+    ],
+  },
+  {
+    slug: "linoleum-sau-mocheta-pvc",
+    title: "Linoleum sau mochetă PVC",
+    metaTitle: "Linoleum sau mochetă PVC | Montaj Pardoseli Brașov",
+    metaDescription:
+      "Diferența dintre linoleum și mocheta PVC: rolă naturală sau rolă din PVC, sudură, unde se vede denivelarea. Nu e mochetă textilă.",
+    datePublished: PUBLISHED,
+    dateModified: PUBLISHED,
+    intro: [
+      "În magazin, „mochetă PVC” nu e o mochetă textilă. E o rolă din PVC, mai subțire, vândută adesea ca pardoseală ieftină pentru garsoniere și spații de închiriat. Linoleumul e tot o rolă, dar din alt material: ulei de in, rășini, plută sau lemn măcinat, pe o pânză.",
+      "Ambele se lipesc pe toată suprafața și se sudează la îmbinare. Nu sunt planșe click. Montajul de linoleum pornește de la 40 lei/mp, doar manoperă.",
+    ],
+    sections: [
+      {
+        heading: "Ce le deosebește la montaj",
+        paragraphs: [
+          "Linoleumul e mai gros și iartă ceva mai puțin o muchie de șapă, dar ține mai bine la trafic constant — cabinete, spații comerciale, case folosite tot anul. Mocheta PVC e mai subțire: orice fir de nisip sau denivelare de 1–2 mm se citește prin ea și, în timp, se rupe exact acolo.",
+          "Ambele au nevoie de suport uscat, curat și drept înainte de adeziv. O rolă lipită peste o șapă prăfuită se dezlipește în foi, indiferent de numele de pe etichetă.",
+        ],
+      },
+      {
+        heading: "Sudura nu e opțională",
+        paragraphs: [
+          "Rostul dintre două fâșii, lăsat doar lipit, lasă apa să intre pe dedesubt. La linoleum sudez îmbinarea la rece sau la cald, după tipul rolei. La mochetă PVC, cordonul de sudură există și el — fără el, rostul se deschide la primul mop ud.",
+          "Tăietura la toc și la colț se face pe loc, nu „din magazin”. O rolă tăiată scurt cu 2 cm nu se întinde înapoi.",
+        ],
+      },
+      {
+        heading: "Ce aleg, în practică",
+        paragraphs: [
+          "Pentru un spațiu în care podeaua se spală des și trebuie să țină ani, linoleumul e varianta pe care o montez. Mocheta PVC are sens când bugetul materialului e mic și suprafața e dreaptă — dar atunci spun clar că durata ei e mai scurtă, nu o vând ca „același lucru, mai ieftin”.",
+          "Dacă vrei planșe, nu rolă, vinilul click e altă discuție. Aici compar doar cele două role.",
+        ],
+      },
+    ],
+    qa: [
+      {
+        question: "Mocheta PVC se pune ca o mochetă textilă, pe bandă dublu-adezivă?",
+        answer:
+          "Nu. E o pardoseală din rolă: se lipește pe toată suprafața și se sudează la îmbinări. Banda pe margine nu ține.",
+      },
+      {
+        question: "Prețul de 40 lei/mp e și pentru mocheta PVC?",
+        answer:
+          "Manopera la o rolă lipită și sudată e în aceeași zonă. Suma exactă depinde de câte îmbinări sunt și de cât de drept e suportul — o dau după măsurătoare.",
+      },
+    ],
+    related: [
+      { href: "/montaj-linoleum-brasov", label: "Montaj linoleum" },
+      { href: "/preturi", label: "Toate prețurile" },
+    ],
+  },
+  {
+    slug: "osb-sau-sapa-autonivelanta",
+    title: "OSB sau șapă autonivelantă",
+    metaTitle: "OSB sau șapă autonivelantă | Montaj Pardoseli Brașov",
+    metaDescription:
+      "Când podeaua are nevoie de plăci OSB și când de o șapă autonivelantă subțire. Nu rezolvă aceeași problemă.",
+    datePublished: PUBLISHED,
+    dateModified: PUBLISHED,
+    intro: [
+      "OSB-ul și șapa autonivelantă nu se înlocuiesc una pe alta. OSB-ul e o placă: ține pe grinzi de lemn sau nivelează o podea veche din scândură. Șapa autonivelantă e un strat subțire turnat pe un suport deja stabil, de obicei beton, ca să închidă gropile mici înainte de vinil sau linoleum.",
+      "Montajul de OSB pornește de la 25 lei/mp, fără costul plăcii. Șapa autonivelantă nu e în lista de prețuri fixe — dacă e nevoie de ea, o trec separat în ofertă, după măsurătoare.",
+    ],
+    sections: [
+      {
+        heading: "Când pun OSB",
+        paragraphs: [
+          "Pe grinzi, la pod, mansardă sau casă pe structură de lemn. Placa se înșurubează, nu se bate în cuie, cu rândurile decalate. Grosimea depinde de distanța dintre grinzi: sub 18 mm, pe deschidere de 60 cm, placa joacă sub picior.",
+          "Peste o dușumea veche din lemn, OSB-ul face un plan nou, continuu, pe care pot pune apoi laminat sau vinil click. O șapă turnată peste scândură care se mișcă crapă. Acolo placa e varianta corectă, nu sacul de autonivelantă.",
+        ],
+      },
+      {
+        heading: "Când are sens autonivelanta",
+        paragraphs: [
+          "Pe o șapă de beton stabilă, cu gropi de câțiva milimetri, mai ales înainte de vinil lipit sau de linoleum. Materialul e subțire și copiază fiecare adâncitură. Un strat de autonivelantă de 3–5 mm închide gropile fără să ridic toată camera cu o placă.",
+          "Nu nivelează o pantă de centimetri și nu înlocuiește o șapă structurală. Dacă diferența e mare, sau dacă suportul e umed, turnatul peste nu rezolvă cauza. O spun la măsurătoare, cu nivela, nu din poze.",
+        ],
+      },
+      {
+        heading: "Ce nu fac",
+        paragraphs: [
+          "Nu pun laminat direct pe o șapă cu gropi „ca să economisim sacul”. Nu pun OSB peste un beton umed, fără folie, doar ca să ascund problema. Și nu dau un preț de autonivelantă la telefon: depinde de câți metri și de cât de adânci sunt gropile.",
+        ],
+      },
+    ],
+    qa: [
+      {
+        question: "Pot pune laminat direct pe OSB?",
+        answer:
+          "Da, după ce placa e fixată și planul e verificat. Peste OSB merge folia, apoi laminatul sau vinilul click.",
+      },
+      {
+        question: "Șapa autonivelantă înlocuiește OSB-ul pe grinzi?",
+        answer:
+          "Nu. Pe grinzi nu ai pe ce turna. Acolo e placă, înșurubată, cu grosimea aleasă după distanța dintre grinzi.",
+      },
+    ],
+    related: [
+      { href: "/montaj-osb-brasov", label: "Montaj plăci OSB" },
+      { href: "/preturi", label: "Toate prețurile" },
+    ],
+  },
+  {
+    slug: "rostul-de-dilatare-la-laminat",
+    title: "Rostul de dilatare la laminat",
+    metaTitle: "Rostul de dilatare la laminat | Montaj Pardoseli Brașov",
+    metaDescription:
+      "De ce laminatul are nevoie de 8–10 mm la perete, ce se întâmplă dacă rostul e astupat și unde mai las loc: țevi, uși, praguri.",
+    datePublished: PUBLISHED,
+    dateModified: PUBLISHED,
+    intro: [
+      "Laminatul se mișcă. Vara, sau când umiditatea din cameră crește, placa se lățește. Dacă e împinsă în perete, nu are unde să se ducă și se ridică la mijlocul camerei — de obicei la câteva luni după montaj, nu în prima zi.",
+      "Rostul ăsta face parte din montaj, nu e un spațiu uitat. La un montaj de laminat, de la 35 lei/mp, îl las peste tot unde placa se oprește într-un lucru fix.",
+    ],
+    sections: [
+      {
+        heading: "Cât loc las și cum se acoperă",
+        paragraphs: [
+          "La perete las de obicei 8–10 mm, pe tot conturul, ținut cu pene până se închid rândurile. La suprafețe lungi, sau dacă producătorul cere mai mult, măresc rostul — nu îl micșorez ca să „încapă” o planșă întreagă.",
+          "Plinta acoperă rostul. Nu îl umplu cu silicon, cu spumă sau cu resturi de folie. Siliconul lipește placa de perete și anulează exact spațiul pentru care a fost lăsat rostul.",
+        ],
+      },
+      {
+        heading: "Unde mai apare, nu doar la perete",
+        paragraphs: [
+          "La țevi las același loc în jurul găurii, acoperit cu rozetă, nu cu chit. La tocul ușii, planșa intră pe sub toc și tot păstrează rostul față de peretele de sub toc. La pragul dintre două camere, dacă suprafața continuă e mare, pun profil de dilatare — nu un singur câmp din hol până în ultimul dormitor, fără întrerupere.",
+          "Lângă un obiect fix — o insulă de bucătărie înșurubată în șapă, un stâlp — placa nu se lipește de el. Se oprește cu rost, iar plinta sau un profil închide marginea.",
+        ],
+      },
+      {
+        heading: "Ce văd când rostul a fost sărit",
+        paragraphs: [
+          "Placa ridicată în mijloc, îmbinări care nu mai stau în click, plintă împinsă de pe perete. Reparația înseamnă demontat de la margine până la zona ridicată, nu „apăsat la loc”. De-asta penele stau pe tot conturul până la ultimul rând, nu doar pe latura de start.",
+        ],
+      },
+    ],
+    qa: [
+      {
+        question: "Pot astupa rostul cu silicon ca să nu se vadă?",
+        answer:
+          "Nu. Plinta îl acoperă. Siliconul îl blochează, iar placa se ridică când camera se încălzește sau crește umiditatea.",
+      },
+      {
+        question: "Același rost e valabil și la vinilul click?",
+        answer:
+          "SPC-ul și LVT-ul click au și ele nevoie de loc la margine, dar valoarea o dă fișa producătorului — uneori e mai mică decât la laminat. Nu copiez cifra de la laminat pe o placă de vinil fără să citesc fișa.",
+      },
+    ],
+    related: [
+      { href: "/montaj-laminat-brasov", label: "Montaj laminat în Brașov" },
+      { href: "/preturi", label: "Toate prețurile" },
+    ],
+  },
+  {
+    slug: "directia-lamelelor",
+    title: "Direcția lamelelor: cum le așezi în cameră",
+    metaTitle: "Direcția lamelelor: cum le așezi în cameră | Montaj Pardoseli Brașov",
+    metaDescription:
+      "Pe lungimea camerei, spre fereastră sau continuu dintr-o cameră în alta. Cum aleg direcția lamelelor la laminat și la vinil click.",
+    datePublished: PUBLISHED,
+    dateModified: PUBLISHED,
+    intro: [
+      "Direcția lamelelor schimbă cum se citește camera, nu rezistența pardoselii. O lamelă pusă pe lungimea încăperii o face să pară mai lungă. Pusă pe lat, camera pare mai lată și rosturile se văd mai des când intri.",
+      "O stabilesc la măsurătoare, înainte să tai primul rând. La laminat, manopera e de la 35 lei/mp; direcția nu schimbă prețul pe metru, dar schimbă câte tăieturi sunt la uși și la praguri.",
+    ],
+    sections: [
+      {
+        heading: "Regula pe care o folosesc cel mai des",
+        paragraphs: [
+          "Lamelele merg paralel cu latura lungă a camerei. Într-un hol, merg pe lungimea holului — altfel fiecare pas cade pe o îmbinare și holul pare tăiat felii. Lumina de la fereastra principală, când cade de-a lungul lamelei, ascunde rosturile. Când cade perpendicular, fiecare rost capătă o umbră.",
+          "Dacă latura lungă și fereastra se bat cap în cap, aleg varianta care se vede din ușă, nu din colțul în care stă canapeaua. Ți-o arăt în cameră, nu pe o regulă scrisă oarbă.",
+        ],
+      },
+      {
+        heading: "Mai multe camere, o singură direcție",
+        paragraphs: [
+          "Când holul și camerele rămân fără prag, păstrez aceeași direcție peste tot. O schimbare de direcție în mijlocul unei treceri cere un profil și se vede. Dacă fiecare cameră are ușă și prag, direcția poate fi alta în dormitor decât în hol — dar o decidem înainte, nu când am ajuns la toc.",
+          "La vinilul click e aceeași logică vizuală. Placa e mai îngustă uneori, deci numărul de rânduri crește, dar nu întorc direcția doar ca să iasă „mai puțină pierdere” dacă camera se citește prost.",
+        ],
+      },
+      {
+        heading: "Ce nu fac ca să economisesc o planșă",
+        paragraphs: [
+          "Nu întorc lamelele pe lat doar ca ultimul rând să iasă dintr-o planșă întreagă. Nu pornesc rândul de la un perete strâmb fără să verific cu sfoara: primul rând dă direcția tuturor celorlalte. Un prim rând pus „după perete”, pe un perete care nu e drept, înclină toată camera.",
+        ],
+      },
+    ],
+    qa: [
+      {
+        question: "Direcția schimbă prețul montajului?",
+        answer:
+          "Prețul pe metru rămâne același. Se schimbă tăieturile de la uși și de la ultimul rând, iar astea se văd la măsurătoare, nu din mesaj.",
+      },
+      {
+        question: "Pe grinzi de lemn, direcția mai contează și la structură?",
+        answer:
+          "Dacă dedesubt e dușumea sau OSB pe grinzi, lamelele merg de obicei perpendicular pe grinzi, ca îmbinările să nu cadă toate de-a lungul unei singure grinzi. O verific la măsurătoare, înainte de regula vizuală.",
+      },
+    ],
+    related: [
+      { href: "/montaj-laminat-brasov", label: "Montaj laminat în Brașov" },
+      { href: "/montaj-vinil-brasov", label: "Montaj vinil / LVT / SPC" },
+      { href: "/preturi", label: "Toate prețurile" },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): ArticleDef | undefined {

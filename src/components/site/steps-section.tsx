@@ -21,9 +21,9 @@ const STEPS = [
 
 export function StepsSection() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
       <h2 className="font-heading text-2xl font-bold sm:text-3xl">Cum lucrăm</h2>
-      <div className="mt-8 grid gap-8 sm:grid-cols-3">
+      <div className="mt-10 grid gap-10 sm:grid-cols-3">
         {STEPS.map((step) => (
           <div key={step.number}>
             <span className="tabular font-heading text-sm font-bold text-primary">

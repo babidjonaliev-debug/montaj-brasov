@@ -11,9 +11,9 @@ export function ServicesGrid() {
 
   return (
     <section id="servicii" className="border-t border-border bg-secondary">
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
         <h2 className="font-heading text-2xl font-bold sm:text-3xl">Ce fac</h2>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {mainServices.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}
@@ -42,8 +42,8 @@ function ServiceCard({
     <Link
       href={`/${service.slug}`}
       className={cn(
-        "group flex flex-col justify-between rounded-xl border border-border bg-card p-5 transition-colors hover:border-primary/40",
-        secondary && "sm:flex-row sm:items-center sm:gap-6 bg-card/60",
+        "group flex flex-col justify-between rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40",
+        secondary && "sm:flex-row sm:items-center sm:gap-8",
       )}
     >
       <div className={cn("flex items-start gap-4", secondary && "sm:items-center")}>

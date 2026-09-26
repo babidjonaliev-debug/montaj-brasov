@@ -6,6 +6,7 @@ import { MeasureKitSection } from "@/components/site/measure-kit-section";
 import { PricingList } from "@/components/site/pricing-list";
 import { ZonesSection } from "@/components/site/zones-section";
 import { WorksSection } from "@/components/site/works-section";
+import { MasterSection } from "@/components/site/master-section";
 import { GuaranteeSection } from "@/components/site/guarantee-section";
 import { FaqSection } from "@/components/site/faq-section";
 import { ArticlesTeaser } from "@/components/site/articles-teaser";
@@ -33,7 +34,7 @@ export default function Home() {
       <ServicesGrid />
       <StepsSection />
       <MeasureKitSection />
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
         <h2 className="font-heading text-2xl font-bold sm:text-3xl">Prețuri, de la</h2>
         <div className="mt-8 max-w-2xl">
           <PricingList variant="compact" />
@@ -41,6 +42,7 @@ export default function Home() {
       </section>
       <ZonesSection />
       <WorksSection />
+      <MasterSection />
       <GuaranteeSection />
       <FaqSection items={HOME_FAQ} />
       <ArticlesTeaser />

@@ -25,6 +25,16 @@ export const BUSINESS_TAGLINE =
  */
 export const OWNER_NAME = "David";
 
+/**
+ * Fapte reale despre David, confirmate de el — nu inventăm nimic în plus
+ * (nicio firmă, niciun CUI, niciun "10 ani"). Folosite în blocul de
+ * prezentare de pe homepage și, pe scurt, în footer.
+ */
+export const OWNER_YEARS_EXPERIENCE = 8;
+export const OWNER_WORKED_IN = "Ucraina";
+/** Acum își construiește afacerea în România, la Brașov. */
+export const OWNER_NOW_BUILDING_IN = "România, la Brașov";
+
 // --- Contact --------------------------------------------------------------
 
 /** Numărul de WhatsApp, în format E.164. Folosit pentru linkul wa.me. */
@@ -37,11 +47,11 @@ export const PHONE_E164 = "+40743447564";
 export const PHONE_DISPLAY = "+40 743 447 564";
 
 /**
- * TODO: link-ul către Instagram-ul proprietarului, dacă și când există unul.
- * Nu îl punem în header — doar, opțional, ca legendă pe pagina de lucrări,
- * odată ce există poze.
+ * Instagram-ul lui David. Aici sunt lucrările și șantierele echipei lui —
+ * nu contul ucrainean, nu poze copiate de pe alt cont. Link către profil,
+ * fără parametri de urmărire (ex. `?stkn=...`) — doar adresa curată.
  */
-export const INSTAGRAM_URL = "";
+export const INSTAGRAM_URL = "https://www.instagram.com/masterr_fix";
 
 // --- Zonă de lucru ----------------------------------------------------------
 

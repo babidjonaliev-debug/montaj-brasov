@@ -17,7 +17,7 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="mx-auto max-w-6xl px-4 pt-14 pb-10 sm:px-6 sm:pt-20">
+    <section className="mx-auto max-w-6xl px-4 pt-16 pb-14 sm:px-6 sm:pt-24 sm:pb-16">
       <div className="relative max-w-2xl">
         <div
           aria-hidden="true"
@@ -25,7 +25,7 @@ export function PageHero({
         />
         <div className="flex items-center gap-4">
           {Icon ? (
-            <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-primary/25 bg-secondary text-primary">
+            <span className="flex size-12 shrink-0 items-center justify-center rounded-lg border border-primary/20 bg-card text-primary">
               <Icon className="size-6" />
             </span>
           ) : null}

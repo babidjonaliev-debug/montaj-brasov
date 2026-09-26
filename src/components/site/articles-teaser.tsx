@@ -6,7 +6,7 @@ export function ArticlesTeaser() {
   const featured = ARTICLES.slice(0, 4);
   return (
     <section className="border-t border-border">
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
         <div className="flex items-baseline justify-between gap-4">
           <h2 className="font-heading text-2xl font-bold sm:text-3xl">Ghiduri</h2>
           <Link
@@ -16,7 +16,7 @@ export function ArticlesTeaser() {
             Toate articolele <ArrowRight className="size-4" />
           </Link>
         </div>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {featured.map((article) => (
             <Link
               key={article.slug}

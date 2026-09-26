@@ -3,7 +3,7 @@ import { WARRANTY_MONTHS } from "@/lib/config";
 export function GuaranteeSection() {
   return (
     <section className="bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
         <p className="kicker">
           <span className="h-px w-6 bg-primary-foreground/60" aria-hidden="true" />
           Garanție scrisă, nu vorbe

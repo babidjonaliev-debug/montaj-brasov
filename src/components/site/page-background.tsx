@@ -8,9 +8,10 @@
  * de aceeași culoare cu fundalul de bază #F7F8F7), suprapus fotografiei —
  * niciun element separat, nicio iconiță, niciun pattern ilustrat.
  *
- * Voalul e ținut jos (≈60%) ca fibra lemnului și rosturile dintre plăci să
- * se vadă clar în spațiile libere; unde e nevoie de contrast suplimentar
- * (titlul din hero), se adaugă un scrim local, nu se întărește voalul global.
+ * Voalul e ≈70%: fibra lemnului rămâne vizibilă în spațiile libere, dar
+ * mai liniștită. Unde titlul are nevoie de contrast, se adaugă un scrim
+ * local, nu se întărește voalul global. Cardurile, headerul, banda teal
+ * și bara de WhatsApp de pe mobil stau pe fundaluri opace, nu pe poză.
  */
 export function PageBackground() {
   return (
@@ -19,7 +20,7 @@ export function PageBackground() {
       className="fixed inset-0 -z-10 h-full w-full"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(247, 248, 247, 0.6), rgba(247, 248, 247, 0.6)), url('/laminate-bg.webp')",
+          "linear-gradient(rgba(247, 248, 247, 0.7), rgba(247, 248, 247, 0.7)), url('/laminate-bg.webp')",
         backgroundSize: "cover, cover",
         backgroundPosition: "center, center",
         backgroundRepeat: "no-repeat, no-repeat",

@@ -1,5 +1,15 @@
 import Link from "next/link";
-import { BUSINESS_NAME, BUSINESS_TAGLINE, OWNER_NAME, PHONE_DISPLAY } from "@/lib/config";
+import { InstagramIcon } from "@/components/site/social-icons";
+import {
+  BUSINESS_NAME,
+  BUSINESS_TAGLINE,
+  INSTAGRAM_URL,
+  OWNER_NAME,
+  OWNER_NOW_BUILDING_IN,
+  OWNER_WORKED_IN,
+  OWNER_YEARS_EXPERIENCE,
+  PHONE_DISPLAY,
+} from "@/lib/config";
 import { buildTelLink, buildWhatsAppLink } from "@/lib/whatsapp";
 
 const FOOTER_LINKS = [
@@ -19,6 +29,11 @@ export function SiteFooter() {
           <div className="max-w-sm">
             <p className="font-heading text-lg font-bold">{BUSINESS_NAME}</p>
             <p className="mt-2 text-sm text-muted-foreground">{BUSINESS_TAGLINE}</p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              {OWNER_NAME} montează pardoseli de {OWNER_YEARS_EXPERIENCE} ani — a lucrat
+              în {OWNER_WORKED_IN}, acum își construiește afacerea în{" "}
+              {OWNER_NOW_BUILDING_IN}.
+            </p>
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm">
             <div className="flex flex-col gap-2">
@@ -46,6 +61,17 @@ export function SiteFooter() {
               {PHONE_DISPLAY ? (
                 <Link href={buildTelLink()} className="text-muted-foreground hover:text-foreground">
                   {PHONE_DISPLAY}
+                </Link>
+              ) : null}
+              {INSTAGRAM_URL ? (
+                <Link
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground"
+                >
+                  <InstagramIcon className="size-4" />
+                  Instagram
                 </Link>
               ) : null}
               <span className="text-muted-foreground">Brașov și localitățile din jur</span>
