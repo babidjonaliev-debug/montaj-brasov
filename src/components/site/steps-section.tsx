@@ -9,7 +9,7 @@ const STEPS = [
     number: "02",
     title: "Vin la măsurătoare",
     description:
-      "În Brașov și în localitățile din jur, de obicei în aceeași zi. Măsor camera, verific suportul și îți spun clar dacă are nevoie de pregătire înainte de montaj.",
+      "În Brașov și în localitățile din jur, în aceeași zi. Măsor camera, verific suportul și îți spun clar dacă are nevoie de pregătire înainte de montaj.",
   },
   {
     number: "03",

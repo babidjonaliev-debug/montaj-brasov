@@ -30,7 +30,7 @@ export const ARTICLES: ArticleDef[] = [
       {
         heading: "Ce e inclus în prețul de bază",
         paragraphs: [
-          "Montaj click, folie sau spumă sub laminat, deformare la perete, tăieturi la ușă și la praguri. Atât. Restul se adaugă pe rânduri separate, ca să vezi exact pentru ce plătești.",
+          "Montaj click, folie sau spumă sub laminat, rost de dilatare la perete, tăieturi la ușă și la praguri. Atât. Restul se adaugă pe rânduri separate, ca să vezi exact pentru ce plătești.",
         ],
       },
       {

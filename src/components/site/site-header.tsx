@@ -18,8 +18,11 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5 font-heading text-lg font-bold tracking-tight">
-          <span className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
+        <Link
+          href="/"
+          className="flex min-w-0 items-center gap-2.5 font-heading text-lg font-bold leading-tight tracking-tight"
+        >
+          <span className="flex size-8 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
             <LaminatIcon className="size-5" />
           </span>
           {BUSINESS_NAME}

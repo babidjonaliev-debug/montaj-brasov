@@ -17,7 +17,7 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="mx-auto max-w-6xl px-4 pt-16 pb-14 sm:px-6 sm:pt-24 sm:pb-16">
+    <section className="mx-auto max-w-6xl overflow-x-clip px-4 pt-16 pb-14 sm:px-6 sm:pt-24 sm:pb-16">
       <div className="relative max-w-2xl">
         <div
           aria-hidden="true"

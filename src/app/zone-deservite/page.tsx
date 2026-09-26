@@ -24,19 +24,31 @@ const ZONE_DETAILS = [
     name: "Ghimbav",
     note: "Case și apartamente de-a lungul DN1/DN73. Măsurătoare în aceeași zi.",
   },
-  { name: "Sânpetru", note: "Aproape de Brașov, spre nord — zonă cu multe case noi." },
-  { name: "Hărman", note: "Aproximativ 10 km de Brașov, în același interval de deplasare." },
-  { name: "Cristian", note: "Pe drumul spre Râșnov, aproximativ 15 km." },
-  { name: "Codlea", note: "La vest de Brașov, aproximativ 15 km." },
+  {
+    name: "Sânpetru",
+    note: "Aproape de Brașov, spre nord — zonă cu multe case noi. Măsurătoare în aceeași zi.",
+  },
+  {
+    name: "Hărman",
+    note: "Aproximativ 10 km de Brașov. Măsurătoare în aceeași zi.",
+  },
+  {
+    name: "Cristian",
+    note: "Pe drumul spre Râșnov, aproximativ 15 km. Măsurătoare în aceeași zi.",
+  },
+  { name: "Codlea", note: "La vest de Brașov, aproximativ 15 km. Măsurătoare în aceeași zi." },
   {
     name: "Râșnov",
-    note: "Aproximativ 20 km. Case și apartamente, nu doar zonă turistică.",
+    note: "Aproximativ 20 km. Case și apartamente, nu doar zonă turistică. Măsurătoare în aceeași zi.",
   },
   {
     name: "Predeal",
-    note: "Aproximativ 25 km, pe DN1. Iarna las o rezervă de timp mai mare pentru drum — o spun clar când stabilim data.",
+    note: "Aproximativ 25 km, pe DN1. Măsurătoare în aceeași zi. Iarna las o rezervă de timp mai mare pentru drum — o spun clar când stabilim data.",
   },
-  { name: "Zărnești", note: "Aproximativ 30 km, capătul zonei în care mă deplasez." },
+  {
+    name: "Zărnești",
+    note: "Aproximativ 30 km, capătul zonei în care mă deplasez. Măsurătoare în aceeași zi.",
+  },
 ];
 
 export default function ZoneDeservitePage() {
