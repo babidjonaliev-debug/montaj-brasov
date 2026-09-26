@@ -13,11 +13,11 @@ const FOOTER_LINKS = [
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-brass/20 bg-secondary">
+    <footer className="border-t border-border bg-secondary">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
           <div className="max-w-sm">
-            <p className="font-heading text-lg font-semibold">{BUSINESS_NAME}</p>
+            <p className="font-heading text-lg font-bold">{BUSINESS_NAME}</p>
             <p className="mt-2 text-sm text-muted-foreground">{BUSINESS_TAGLINE}</p>
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm">

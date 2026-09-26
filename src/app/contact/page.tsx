@@ -23,10 +23,10 @@ export const metadata: Metadata = pageMetadata({
 export default function ContactPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
-      <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+      <h1 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl">
         Contact — {OWNER_NAME}
       </h1>
-      <p className="mt-3 text-sm font-medium uppercase tracking-[0.12em] text-brass">
+      <p className="kicker mt-3">
         Scrii direct cu {OWNER_NAME}, fără telefonist sau secretariat
       </p>
       <p className="mt-4 text-lg text-muted-foreground">{HOURS_NOTE}</p>
@@ -36,13 +36,13 @@ export default function ContactPage() {
           href={buildWhatsAppLink()}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 hover:shadow-sm"
+          className="flex items-center gap-3 rounded-xl border border-border bg-card p-5 hover:shadow-sm"
         >
-          <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+          <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <WhatsAppIcon className="size-5" />
           </span>
           <span>
-            <span className="block text-base font-semibold">Scrie-i lui {OWNER_NAME}</span>
+            <span className="block text-base font-bold">Scrie-i lui {OWNER_NAME}</span>
             <span className="block text-sm text-muted-foreground">
               Cel mai rapid — mesaj precompletat pe WhatsApp
             </span>
@@ -51,13 +51,13 @@ export default function ContactPage() {
 
         <Link
           href={buildTelLink()}
-          className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 hover:shadow-sm"
+          className="flex items-center gap-3 rounded-xl border border-border bg-card p-5 hover:shadow-sm"
         >
-          <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-secondary text-foreground">
+          <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-secondary text-foreground">
             <Phone className="size-5" />
           </span>
           <span>
-            <span className="block text-base font-semibold">
+            <span className="block text-base font-bold">
               Sună-l pe {OWNER_NAME}
             </span>
             <span className="block text-sm text-muted-foreground">
@@ -68,7 +68,7 @@ export default function ContactPage() {
       </div>
 
       <div className="mt-12">
-        <h2 className="font-heading text-xl font-semibold">Program</h2>
+        <h2 className="font-heading text-xl font-bold">Program</h2>
         <ul className="mt-4 space-y-2 text-muted-foreground">
           {HOURS_DETAIL.map((line) => (
             <li key={line}>{line}</li>
@@ -77,7 +77,7 @@ export default function ContactPage() {
       </div>
 
       <div className="mt-8">
-        <h2 className="font-heading text-xl font-semibold">
+        <h2 className="font-heading text-xl font-bold">
           Când e realistă măsurătoarea în aceeași zi
         </h2>
         <p className="mt-3 text-muted-foreground">

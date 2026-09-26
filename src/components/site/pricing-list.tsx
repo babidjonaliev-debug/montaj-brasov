@@ -1,26 +1,39 @@
 import Link from "next/link";
 import { MINIMUM_VISIT_FEE, PRICES } from "@/lib/config";
 import { SERVICES } from "@/data/services";
+import { SERVICE_ICONS } from "@/components/site/service-icons";
 import { ArrowRight } from "lucide-react";
 
 export function PricingList({ variant = "compact" }: { variant?: "compact" | "full" }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-      <ul className="divide-y divide-border">
+    <div className="rounded-xl border border-border bg-card p-6 sm:p-8">
+      <div className="mb-2 flex items-baseline justify-between gap-4">
+        <span className="kicker">Serviciu</span>
+        <span className="kicker">Preț, de la</span>
+      </div>
+      <div>
         {SERVICES.map((service) => {
           const price = PRICES[service.priceKey];
+          const Icon = SERVICE_ICONS[service.iconKey];
           return (
-            <li key={service.slug} className="flex items-baseline justify-between gap-4 py-3">
-              <Link href={`/${service.slug}`} className="text-base font-medium hover:text-primary">
-                {price.label}
-              </Link>
-              <span className="tabular whitespace-nowrap text-base font-semibold">
-                de la {price.fromPrice} {price.unit}
+            <Link key={service.slug} href={`/${service.slug}`} className="spec-row group">
+              <span className="flex items-center gap-3">
+                <Icon className="size-5 shrink-0 text-primary" />
+                <span className="text-base font-medium group-hover:text-primary">
+                  {price.label}
+                </span>
               </span>
-            </li>
+              <span className="spec-rule" aria-hidden="true" />
+              <span className="tabular whitespace-nowrap text-base font-bold">
+                {price.fromPrice}
+                <span className="ml-1 text-sm font-medium text-muted-foreground">
+                  {price.unit}
+                </span>
+              </span>
+            </Link>
           );
         })}
-      </ul>
+      </div>
 
       <div className="mt-6 space-y-2 border-t border-border pt-6 text-sm text-muted-foreground">
         <p>Măsurătoarea e gratuită, indiferent de rezultat.</p>

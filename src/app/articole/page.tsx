@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
 export default function ArticolePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6">
-      <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+      <h1 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl">
         Articole
       </h1>
       <p className="mt-4 text-lg text-muted-foreground">
@@ -28,10 +28,10 @@ export default function ArticolePage() {
           <Link
             key={article.slug}
             href={`/articole/${article.slug}`}
-            className="group flex items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5 hover:shadow-sm"
+            className="group flex items-center justify-between gap-4 rounded-xl border border-border bg-card p-5 hover:shadow-sm"
           >
             <div>
-              <h2 className="text-lg font-semibold">{article.title}</h2>
+              <h2 className="text-lg font-bold">{article.title}</h2>
               <p className="mt-1 text-sm text-muted-foreground">
                 {article.metaDescription}
               </p>

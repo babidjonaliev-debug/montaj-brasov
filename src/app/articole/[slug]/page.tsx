@@ -56,7 +56,7 @@ export default async function ArticlePage({
         Toate articolele
       </Link>
 
-      <h1 className="mt-6 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+      <h1 className="mt-6 font-heading text-3xl font-bold tracking-tight sm:text-4xl">
         {article.title}
       </h1>
 
@@ -68,7 +68,7 @@ export default async function ArticlePage({
 
       {article.sections.map((section) => (
         <div key={section.heading} className="mt-8">
-          <h2 className="font-heading text-xl font-semibold">{section.heading}</h2>
+          <h2 className="font-heading text-xl font-bold">{section.heading}</h2>
           <div className="mt-3 space-y-4 text-base leading-relaxed text-foreground/90">
             {section.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
@@ -78,7 +78,7 @@ export default async function ArticlePage({
       ))}
 
       {article.qa.length > 0 ? (
-        <div className="mt-10 space-y-6 rounded-2xl border border-border bg-card p-6">
+        <div className="mt-10 space-y-6 rounded-xl border border-border bg-card p-6">
           {article.qa.map((item) => (
             <div key={item.question}>
               <h3 className="font-medium">{item.question}</h3>

@@ -17,7 +17,7 @@ export function FaqSection({
 }) {
   return (
     <section id={id} className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <h2 className="font-heading text-2xl font-semibold sm:text-3xl">{title}</h2>
+      <h2 className="font-heading text-2xl font-bold sm:text-3xl">{title}</h2>
       <Accordion className="mt-8">
         {items.map((item, index) => (
           <AccordionItem key={item.question} value={`item-${index}`}>

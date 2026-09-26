@@ -6,6 +6,7 @@ import { FaqSection } from "@/components/site/faq-section";
 import { JsonLd } from "@/components/site/json-ld";
 import { PRICES, WARRANTY_MONTHS } from "@/lib/config";
 import { getService } from "@/data/services";
+import { SERVICE_ICONS } from "@/components/site/service-icons";
 import { faqPageJsonLd, pageMetadata, serviceJsonLd } from "@/lib/seo";
 
 const service = getService("montaj-linoleum-brasov")!;
@@ -44,6 +45,7 @@ export default function LinoleumPage() {
 
       <PageHero
         eyebrow="Montaj linoleum"
+        icon={SERVICE_ICONS[service.iconKey]}
         title={service.h1}
         lead="Linoleum în rolă, lipit pe toată suprafața și sudat la îmbinări. Potrivit pentru cabinete, spații comerciale și case de vacanță."
         presetJobType="linoleum"
@@ -52,7 +54,7 @@ export default function LinoleumPage() {
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
         <div className="grid gap-10 sm:grid-cols-2">
           <div>
-            <h2 className="font-heading text-xl font-semibold">Ce include montajul</h2>
+            <h2 className="font-heading text-xl font-bold">Ce include montajul</h2>
             <div className="mt-4">
               <IncludedList
                 items={[
@@ -65,7 +67,7 @@ export default function LinoleumPage() {
             </div>
           </div>
           <div>
-            <h2 className="font-heading text-xl font-semibold">Ce se plătește separat</h2>
+            <h2 className="font-heading text-xl font-bold">Ce se plătește separat</h2>
             <div className="mt-4">
               <SeparateList
                 items={[
@@ -79,8 +81,8 @@ export default function LinoleumPage() {
           </div>
         </div>
 
-        <div className="mt-10 rounded-2xl border border-border bg-card p-6 sm:p-8">
-          <p className="tabular text-2xl font-semibold">
+        <div className="mt-10 rounded-xl border border-border bg-card p-6 sm:p-8">
+          <p className="tabular text-2xl font-bold">
             de la {price.fromPrice} {price.unit}
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -93,7 +95,7 @@ export default function LinoleumPage() {
         </div>
 
         <div className="mt-10 max-w-2xl space-y-4 text-sm text-muted-foreground">
-          <h2 className="font-heading text-xl font-semibold text-foreground">
+          <h2 className="font-heading text-xl font-bold text-foreground">
             Cum se pregătește suportul
           </h2>
           <p>

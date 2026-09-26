@@ -1,8 +1,10 @@
 import type { PriceKey } from "@/lib/config";
+import type { ServiceIconKey } from "@/components/site/service-icons";
 
 export interface ServiceDef {
   slug: string;
   priceKey: PriceKey;
+  iconKey: ServiceIconKey;
   navTitle: string;
   h1: string;
   shortDescription: string;
@@ -14,6 +16,7 @@ export const SERVICES: ServiceDef[] = [
   {
     slug: "montaj-laminat-brasov",
     priceKey: "laminat",
+    iconKey: "laminat",
     navTitle: "Montaj laminat",
     h1: "Montaj laminat în Brașov",
     shortDescription:
@@ -25,6 +28,7 @@ export const SERVICES: ServiceDef[] = [
   {
     slug: "montaj-vinil-brasov",
     priceKey: "vinil",
+    iconKey: "vinil",
     navTitle: "Montaj vinil / LVT / SPC",
     h1: "Montaj vinil, LVT și SPC în Brașov",
     shortDescription:
@@ -36,6 +40,7 @@ export const SERVICES: ServiceDef[] = [
   {
     slug: "montaj-linoleum-brasov",
     priceKey: "linoleum",
+    iconKey: "linoleum",
     navTitle: "Montaj linoleum",
     h1: "Montaj linoleum în Brașov",
     shortDescription:
@@ -47,6 +52,7 @@ export const SERVICES: ServiceDef[] = [
   {
     slug: "montaj-osb-brasov",
     priceKey: "osb",
+    iconKey: "osb",
     navTitle: "Montaj plăci OSB",
     h1: "Montaj plăci OSB în Brașov",
     shortDescription:
@@ -58,6 +64,7 @@ export const SERVICES: ServiceDef[] = [
   {
     slug: "lucrari-mici-brasov",
     priceKey: "lucrariMici",
+    iconKey: "lucrariMici",
     navTitle: "Lucrări mici",
     h1: "Prize, întrerupătoare și mici reparații în Brașov",
     shortDescription:

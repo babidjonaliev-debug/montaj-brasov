@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
@@ -8,17 +8,14 @@ import { JsonLd } from "@/components/site/json-ld";
 import { localBusinessJsonLd } from "@/lib/seo";
 import { BUSINESS_NAME, BUSINESS_TAGLINE, SITE_URL } from "@/lib/config";
 
-const bodyFont = Inter({
-  variable: "--font-body",
+/**
+ * O singură familie — compactă, geometrică, tehnică — pentru tot site-ul.
+ * Titlurile folosesc greutăți grele (700/800), textul de corp o greutate
+ * mai ușoară (400/450). Fără serif, fără aspect de revistă.
+ */
+const displayFont = Sora({
+  variable: "--font-display",
   subsets: ["latin", "latin-ext"],
-  display: "swap",
-});
-
-const headingFont = Fraunces({
-  variable: "--font-heading",
-  subsets: ["latin", "latin-ext"],
-  weight: ["500", "600", "700"],
-  style: ["normal"],
   display: "swap",
 });
 
@@ -35,7 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="ro"
-      className={`${bodyFont.variable} ${headingFont.variable} h-full antialiased`}
+      className={`${displayFont.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <JsonLd data={localBusinessJsonLd()} />

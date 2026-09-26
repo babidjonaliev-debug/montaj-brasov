@@ -3,15 +3,21 @@ import { PHONE_DISPLAY } from "@/lib/config";
 import { buildTelLink } from "@/lib/whatsapp";
 import Link from "next/link";
 
+const SPECS = [
+  { label: "Zonă", value: "Brașov + împrejurimi" },
+  { label: "Măsurătoare", value: "aceeași zi" },
+  { label: "Program", value: "seară · noapte · weekend" },
+];
+
 export function Hero() {
   return (
-    <section className="mx-auto max-w-6xl px-4 pt-16 pb-20 sm:px-6 sm:pt-24 sm:pb-28">
+    <section className="mx-auto max-w-6xl px-4 pt-16 pb-16 sm:px-6 sm:pt-24 sm:pb-20">
       <div className="max-w-2xl">
-        <p className="mb-5 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.14em] text-brass uppercase">
-          <span className="h-px w-6 bg-brass" aria-hidden="true" />
+        <p className="kicker">
+          <span className="h-px w-6 bg-primary" aria-hidden="true" />
           Brașov și localitățile din jur
         </p>
-        <h1 className="font-heading text-5xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl">
+        <h1 className="mt-5 font-heading text-5xl font-bold leading-[1.02] tracking-tight text-foreground sm:text-6xl">
           Montaj de pardoseli în Brașov
         </h1>
         <p className="mt-6 text-lg text-muted-foreground sm:text-xl">
@@ -32,6 +38,15 @@ export function Hero() {
             </Link>
           ) : null}
         </div>
+      </div>
+
+      <div className="mt-12 flex max-w-2xl flex-wrap gap-x-8 gap-y-4 border-t border-border pt-6">
+        {SPECS.map((spec) => (
+          <div key={spec.label}>
+            <p className="kicker text-[0.68rem]">{spec.label}</p>
+            <p className="mt-1 text-sm font-bold text-foreground">{spec.value}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

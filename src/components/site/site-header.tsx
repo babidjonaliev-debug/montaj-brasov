@@ -4,6 +4,7 @@ import { BUSINESS_NAME, OWNER_NAME, PHONE_DISPLAY } from "@/lib/config";
 import { SERVICES } from "@/data/services";
 import { buildTelLink } from "@/lib/whatsapp";
 import { WhatsAppCta } from "@/components/site/whatsapp-cta";
+import { LaminatIcon } from "@/components/site/service-icons";
 
 const NAV_LINKS = [
   { href: "/preturi", label: "Prețuri" },
@@ -14,9 +15,12 @@ const NAV_LINKS = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-brass/20 bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <Link href="/" className="font-heading text-lg font-semibold tracking-tight">
+        <Link href="/" className="flex items-center gap-2.5 font-heading text-lg font-bold tracking-tight">
+          <span className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
+            <LaminatIcon className="size-5" />
+          </span>
           {BUSINESS_NAME}
         </Link>
 

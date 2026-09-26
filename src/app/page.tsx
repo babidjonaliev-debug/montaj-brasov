@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/site/hero";
 import { ServicesGrid } from "@/components/site/services-grid";
 import { StepsSection } from "@/components/site/steps-section";
+import { MeasureKitSection } from "@/components/site/measure-kit-section";
 import { PricingList } from "@/components/site/pricing-list";
 import { ZonesSection } from "@/components/site/zones-section";
 import { WorksSection } from "@/components/site/works-section";
@@ -31,8 +32,9 @@ export default function Home() {
       <Hero />
       <ServicesGrid />
       <StepsSection />
+      <MeasureKitSection />
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <h2 className="font-heading text-2xl font-semibold sm:text-3xl">Prețuri, de la</h2>
+        <h2 className="font-heading text-2xl font-bold sm:text-3xl">Prețuri, de la</h2>
         <div className="mt-8 max-w-2xl">
           <PricingList variant="compact" />
         </div>

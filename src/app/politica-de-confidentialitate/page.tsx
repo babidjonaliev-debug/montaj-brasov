@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMetadata({
 export default function PrivacyPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-14 sm:px-6">
-      <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+      <h1 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl">
         Politica de confidențialitate
       </h1>
 
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         </p>
 
         <div>
-          <h2 className="font-heading text-lg font-semibold text-foreground">
+          <h2 className="font-heading text-lg font-bold text-foreground">
             Ce se întâmplă când apeși butonul WhatsApp
           </h2>
           <p className="mt-2">
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
         </div>
 
         <div>
-          <h2 className="font-heading text-lg font-semibold text-foreground">
+          <h2 className="font-heading text-lg font-bold text-foreground">
             Ce date trimiți și de ce
           </h2>
           <p className="mt-2">
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
         </div>
 
         <div>
-          <h2 className="font-heading text-lg font-semibold text-foreground">
+          <h2 className="font-heading text-lg font-bold text-foreground">
             Cât timp se păstrează conversația
           </h2>
           <p className="mt-2">
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
         </div>
 
         <div>
-          <h2 className="font-heading text-lg font-semibold text-foreground">
+          <h2 className="font-heading text-lg font-bold text-foreground">
             Telefon
           </h2>
           <p className="mt-2">
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
         </div>
 
         <div>
-          <h2 className="font-heading text-lg font-semibold text-foreground">
+          <h2 className="font-heading text-lg font-bold text-foreground">
             Contact pentru întrebări despre date
           </h2>
           <p className="mt-2">

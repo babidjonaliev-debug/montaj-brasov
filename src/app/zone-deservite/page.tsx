@@ -51,7 +51,7 @@ export default function ZoneDeservitePage() {
         })}
       />
       <div className="max-w-2xl">
-        <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h1 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl">
           Zone deservite
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
@@ -64,8 +64,8 @@ export default function ZoneDeservitePage() {
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2">
         {ZONE_DETAILS.map((zone) => (
-          <div key={zone.name} className="rounded-2xl border border-border bg-card p-5">
-            <h2 className="font-heading text-lg font-semibold">{zone.name}</h2>
+          <div key={zone.name} className="rounded-xl border border-border bg-card p-5">
+            <h2 className="font-heading text-lg font-bold">{zone.name}</h2>
             <p className="mt-1.5 text-sm text-muted-foreground">{zone.note}</p>
           </div>
         ))}

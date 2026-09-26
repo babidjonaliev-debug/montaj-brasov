@@ -57,6 +57,19 @@ npm run start   # rulează build-ul
 npm run lint    # ESLint
 ```
 
+## Identitate vizuală
+
+Aspect de brand tehnic de scule, nu de revistă: câmp alb (`#F7F8F7`), text
+aproape-negru (`#121417`), un singur accent teal dens (`#008C9E`, hover
+`#006E7C`) pentru butoane, linkuri și contururi de iconițe. O singură familie
+de fonturi — **Sora** (`next/font/google`, subset `latin` + `latin-ext`) —
+pentru titluri (greutăți grele) și corp de text (greutăți mai ușoare).
+Iconițele de serviciu (planșă laminat, planșă vinil, rolă linoleum, placă
+OSB, priză) sunt SVG-uri originale cu contur, în
+`src/components/site/service-icons.tsx`; iconițele din blocul „Ce iau la
+măsurătoare” sunt în `src/components/site/tool-icons.tsx`. Nu se folosește
+niciun logo, nume sau element care aparține unei mărci de scule existente.
+
 ## Adăugarea de poze la lucrări
 
 Pune poza în `public/lucrari/nume-poza.jpg` și adaugă un rând în
