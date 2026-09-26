@@ -6,6 +6,7 @@ import {
   BUSINESS_NAME,
   HOURS_DETAIL,
   HOURS_NOTE,
+  OWNER_NAME,
   PHONE_DISPLAY,
   SAME_DAY_CUTOFF_HOUR,
 } from "@/lib/config";
@@ -23,8 +24,11 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
       <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-        Contact
+        Contact — {OWNER_NAME}
       </h1>
+      <p className="mt-3 text-sm font-medium uppercase tracking-[0.12em] text-brass">
+        Scrii direct cu {OWNER_NAME}, fără telefonist sau secretariat
+      </p>
       <p className="mt-4 text-lg text-muted-foreground">{HOURS_NOTE}</p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -32,31 +36,33 @@ export default function ContactPage() {
           href={buildWhatsAppLink()}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 hover:shadow-md"
+          className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 hover:shadow-sm"
         >
           <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
             <WhatsAppIcon className="size-5" />
           </span>
           <span>
-            <span className="block text-base font-semibold">WhatsApp</span>
+            <span className="block text-base font-semibold">Scrie-i lui {OWNER_NAME}</span>
             <span className="block text-sm text-muted-foreground">
-              Cel mai rapid — mesaj precompletat
+              Cel mai rapid — mesaj precompletat pe WhatsApp
             </span>
           </span>
         </Link>
 
         <Link
           href={buildTelLink()}
-          className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 hover:shadow-md"
+          className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 hover:shadow-sm"
         >
           <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-secondary text-foreground">
             <Phone className="size-5" />
           </span>
           <span>
             <span className="block text-base font-semibold">
-              {PHONE_DISPLAY || "Telefon"}
+              Sună-l pe {OWNER_NAME}
             </span>
-            <span className="block text-sm text-muted-foreground">A doua opțiune</span>
+            <span className="block text-sm text-muted-foreground">
+              {PHONE_DISPLAY || "Telefon"} — a doua opțiune
+            </span>
           </span>
         </Link>
       </div>

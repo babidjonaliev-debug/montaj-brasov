@@ -17,7 +17,9 @@ export function buildWhatsAppMessage(presetJobType?: string): string {
 
 export function buildWhatsAppLink(presetJobType?: string): string {
   const text = encodeURIComponent(buildWhatsAppMessage(presetJobType));
-  return `https://wa.me/${WHATSAPP_E164}?text=${text}`;
+  // wa.me links use digits only — no leading "+".
+  const digits = WHATSAPP_E164.replace(/\D/g, "");
+  return `https://wa.me/${digits}?text=${text}`;
 }
 
 export function buildTelLink(): string {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BUSINESS_NAME, BUSINESS_TAGLINE, PHONE_DISPLAY } from "@/lib/config";
+import { BUSINESS_NAME, BUSINESS_TAGLINE, OWNER_NAME, PHONE_DISPLAY } from "@/lib/config";
 import { buildTelLink, buildWhatsAppLink } from "@/lib/whatsapp";
 
 const FOOTER_LINKS = [
@@ -13,8 +13,8 @@ const FOOTER_LINKS = [
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-border bg-secondary/40">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <footer className="border-t border-brass/20 bg-secondary">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
           <div className="max-w-sm">
             <p className="font-heading text-lg font-semibold">{BUSINESS_NAME}</p>
@@ -34,7 +34,7 @@ export function SiteFooter() {
               ))}
             </div>
             <div className="flex flex-col gap-2">
-              <span className="font-medium text-foreground">Contact</span>
+              <span className="font-medium text-foreground">Contact — {OWNER_NAME}</span>
               <Link
                 href={buildWhatsAppLink()}
                 target="_blank"

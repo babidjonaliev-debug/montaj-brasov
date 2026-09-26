@@ -1,11 +1,9 @@
 /**
  * Toate datele reale ale afacerii sunt AICI, într-un singur loc.
- * Când proprietarul trimite datele lui, se schimbă doar valorile din acest fișier.
+ * Dacă proprietarul trimite date noi, se schimbă doar valorile din acest fișier.
  *
- * Câmpurile marcate TODO sunt placeholder-e deliberate — nu sunt date reale,
- * nu sunt un CUI, nu este un număr de telefon inventat. Site-ul funcționează
- * și cu ele goale: butoanele rămân vizibile, dar nu vor avea un număr valid
- * până când proprietarul îl trimite.
+ * Nu inventăm un nume de firmă, un CUI sau o adresă — nu le avem. Numele
+ * afișat e prenumele proprietarului, David, nu o denumire de companie.
  */
 
 // --- Identitate ---------------------------------------------------------
@@ -13,35 +11,33 @@
 /**
  * Nume afișat pe site. E un nume descriptiv de serviciu ("Montaj Pardoseli
  * Brașov"), NU un nume de firmă inventat. Nu are CUI, nu are Registrul
- * Comerțului, nu are adresă — pentru că nu le avem. Proprietarul poate
- * înlocui cu numele lui sau cu un nume de firmă odată ce îl are.
+ * Comerțului, nu are adresă — pentru că nu le avem.
  */
 export const BUSINESS_NAME = "Montaj Pardoseli Brașov";
 
 export const BUSINESS_TAGLINE =
   "Montaj laminat, vinil, linoleum și OSB în Brașov. Măsurătoare în aceeași zi.";
 
+/**
+ * Prenumele proprietarului — persoana reală care răspunde pe WhatsApp și
+ * vine la măsurătoare. Apare în header, footer, pe pagina de contact și pe
+ * bara fixă de pe mobil, ca să fie clar cu cine vorbește clientul.
+ */
+export const OWNER_NAME = "David";
+
 // --- Contact --------------------------------------------------------------
 
-/**
- * TODO: numărul de WhatsApp în format E.164, ex: "+40712345678".
- * Lăsat gol intenționat — nu inventăm un număr românesc.
- * Butoanele citesc această constantă; când e goală, linkul wa.me se
- * deschide fără destinatar (interfața rămâne funcțională și vizibilă).
- */
-export const WHATSAPP_E164 = "";
+/** Numărul de WhatsApp, în format E.164. Folosit pentru linkul wa.me. */
+export const WHATSAPP_E164 = "+40743447564";
+
+/** Același număr, pentru linkul tel: și pentru JSON-LD. */
+export const PHONE_E164 = "+40743447564";
+
+/** Cum arată numărul pentru oameni. */
+export const PHONE_DISPLAY = "+40 743 447 564";
 
 /**
- * TODO: același număr, pentru linkul tel: și pentru JSON-LD.
- * De obicei identic cu WHATSAPP_E164.
- */
-export const PHONE_E164 = "";
-
-/** Cum arată numărul pentru oameni (cu spații), ex: "0712 345 678". */
-export const PHONE_DISPLAY = "";
-
-/**
- * TODO: link-ul către Instagram-ul proprietarului (ucrainean).
+ * TODO: link-ul către Instagram-ul proprietarului, dacă și când există unul.
  * Nu îl punem în header — doar, opțional, ca legendă pe pagina de lucrări,
  * odată ce există poze.
  */

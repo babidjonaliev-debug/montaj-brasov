@@ -2,10 +2,11 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import { buildTelLink, buildWhatsAppLink } from "@/lib/whatsapp";
 import { WhatsAppIcon } from "@/components/site/whatsapp-cta";
+import { OWNER_NAME } from "@/lib/config";
 
 export function MobileWhatsAppBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 flex items-stretch gap-2 border-t border-border bg-background/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 flex items-stretch gap-2 border-t border-brass/20 bg-background/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden">
       <Link
         href={buildWhatsAppLink()}
         target="_blank"
@@ -13,7 +14,7 @@ export function MobileWhatsAppBar() {
         className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-sm"
       >
         <WhatsAppIcon className="size-5" />
-        Scrie pe WhatsApp
+        Scrie-i lui {OWNER_NAME}
       </Link>
       <Link
         href={buildTelLink()}
