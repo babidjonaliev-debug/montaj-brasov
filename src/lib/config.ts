@@ -121,8 +121,8 @@ export const WARRANTY_MONTHS = 12;
 // --- SEO / domeniu ---------------------------------------------------------------
 
 /**
- * TODO: domeniul real, după ce proprietarul cumpără unul și face deploy.
- * Folosit doar pentru metadate și JSON-LD — schimbă o singură valoare aici.
+ * Domeniul public. metadataBase, canonical, sitemap, Open Graph și JSON-LD
+ * citesc această valoare. NEXT_PUBLIC_SITE_URL o poate suprascrie la build.
  */
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://montaj-pardoseli-brasov.ro";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.montajparchet.homes";
