@@ -19,14 +19,13 @@ function IconBase({ children, ...props }: IconProps & { children: React.ReactNod
   );
 }
 
-/** Ruletă: un tambur rotund cu banda de măsură trasă în afară. */
+/** Ruletă: o casetă mică, rectangulară, cu banda de măsură dreaptă, întinsă în afară. */
 export function TapeMeasureIcon(props: IconProps) {
   return (
     <IconBase {...props}>
-      <circle cx="16" cy="18" r="10.5" />
-      <circle cx="16" cy="18" r="3" />
-      <path d="M25 22.5 33 30" />
-      <path d="M29.5 28 33 24.5v6.5h-6.5Z" strokeOpacity={0.6} />
+      <rect x="5" y="12" width="13" height="13" />
+      <path d="M18 18.5h14" />
+      <path d="M22 16v5M26 16v5M30 16v5" strokeOpacity={0.6} />
     </IconBase>
   );
 }

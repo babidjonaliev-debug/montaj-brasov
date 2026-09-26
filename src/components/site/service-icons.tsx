@@ -51,13 +51,14 @@ export function VinilIcon(props: IconProps) {
   );
 }
 
-/** Rolă de linoleum: o spirală care se deschide într-o foaie plată. */
+/** Rolă de linoleum: un cilindru (rola) și o foaie scurtă, dreaptă, derulată din el. */
 export function LinoleumIcon(props: IconProps) {
   return (
     <IconBase {...props}>
-      <path d="M9 27V13a5 5 0 0 1 5-5 4 4 0 0 1 4 4 3 3 0 0 1-3 3" />
-      <path d="M9 27h22" />
-      <path d="M9 22h17" strokeOpacity={0.55} />
+      <ellipse cx="12" cy="9" rx="6" ry="2.4" />
+      <path d="M6 9v13a6 2.4 0 0 0 12 0V9" />
+      <rect x="18" y="19" width="15" height="6" />
+      <path d="M18 22h15" strokeOpacity={0.55} />
     </IconBase>
   );
 }
